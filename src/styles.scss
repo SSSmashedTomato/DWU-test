@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+
+$background-color: #252525 !important;
+$font-color: #fff !important;
+
+body {
+    background-image: url("/assets/background-login.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+  
+}
+
+.p-card{
+background-color: $background-color;
+color: $font-color;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-grid {
+    display: flex;
+    padding-right: 13%;
+    padding-left: 12%;
+    
+}

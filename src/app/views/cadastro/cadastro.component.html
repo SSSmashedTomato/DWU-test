@@ -1,0 +1,38 @@
+<div class="p-grid p-justify-center card" id="cadastro">
+    <div class="p-col-12 p-sm-6 p-md-4"></div>
+    <p-card>
+        <div class="p-grid p-justify-center">
+            <div class="p-col-12">
+                <div class="p-col-12 text-center">
+                    <i class="fab fa-angular fa-6x" style="color: #de0031;"></i>
+                    <h2>Cadastro</h2>
+                </div>
+                <label for="">Nome Completo:</label>
+                <input class="p-col-12" [(ngModel)]="cadastro.Nome" type="text" pInputText />
+            </div>
+            <div class="p-col-12">
+                <label for="">Telefone:</label>
+                <input class="p-col-12" type="number" [(ngModel)]="cadastro.Telefone" placeholder="(99) 999-9999"
+                    pImputNumber />
+            </div>
+
+            <div class="p-col-12">
+                <label for="">Data de Nascimento:</label>
+                <input class="p-col-12" [(ngModel)]="cadastro.Nascimento" type="date" pImputNumber />
+            </div>
+
+            <div class="p-col-12">
+                <label for="">Horário:</label>
+                <input class="p-col-12" [(ngModel)]="cadastro.Horario" type="time" pImputNumber />
+            </div>
+            <div class="p-col-12">
+                <label for="">Observações:</label>
+                <textarea rows="10" [(ngModel)]="cadastro.Observacao" cols="120" maxlength="200"></textarea>
+            </div>
+
+            <div class="p-col-12">
+                <button pButton type="button" (click)="cadastrar()" label="Salvar" class="p-col-12"></button>
+            </div>
+        </div>
+    </p-card>
+</div>

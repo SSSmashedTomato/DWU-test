@@ -1,0 +1,25 @@
+
+    <div class="p-grid p-justify-left card">
+        <div class="p-col-12 p-sm-6 p-md-4"></div>
+        <p-card>
+            <div class="p-grid p-justify-center">
+                <div class="p-col-12">
+                    <div class="p-col-12 text-center">
+                        <i class="fab fa-angular fa-6x" style="color: #de0031;"></i>
+                        <h2>Login DWU</h2>
+                    </div>
+                    <label for="">Usuário:</label>
+                    <input class="p-col-12" [(ngModel)]="usuario.login" id="usuario" name="usuario" type="text"
+                        pInputText />
+                </div>
+                <div class="p-col-12">
+                    <label for="">Senha:</label>
+                    <input class="p-col-12" [(ngModel)]="usuario.senha" id="senha" name="senha" type="password"
+                        pPassword />
+                </div>
+                <div class="p-col-12">
+                    <button pButton type="button" label="Logar" (click)="login()" class="p-col-12"></button>
+                </div>
+            </div>
+        </p-card>
+</div>
